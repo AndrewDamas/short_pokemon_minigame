@@ -1,0 +1,344 @@
+body {
+    background: rgb(218, 121, 102);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    user-select: none;
+}
+
+#tab {
+    border: solid black 2px;
+    width: 100px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+}
+
+.choosepokemon {
+    background-color: white;
+    padding: 50px;
+    width: 500px;
+    border-radius: 20px;
+    height: 265px;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pokemon Solid';
+    color: rgb(0, 0, 0);
+}
+
+img {
+    width: 100px;
+}
+
+.pokeselection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+p {
+    font-family: 'Press Start 2P';
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemon:hover {
+    cursor: pointer;
+}
+
+img:hover {
+    width: 125px;
+}
+
+.battlescreen {
+    width: 900px;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#background {
+    width: 900px;
+    height: 488px;
+    position: absolute;
+}
+
+#opponentscreen {
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+}
+
+#opponentleft {
+    width: 50%;
+}
+
+#opponentdata {
+    border: 3px solid black;
+    width: 300px;
+    height: 80px;
+    top: 40px;
+    left: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    background-color: white;
+}
+
+#opponentnameandlevel {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: space-between;
+}
+
+#opponenthealth {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#opponenthp {
+    width: 50%;
+    margin: 0;
+}
+
+#opponenthealthbar {
+    border: 1px solid black;
+    width: 149px;
+    margin: 0;
+    height: 10px;
+    left: 0px;
+}
+
+#opponenthealthbarinside {
+    background-color: rgb(64, 255, 0);
+    width: 149px;
+    margin: 0;
+    height: 10px;
+    left: 0px;
+}
+
+#opponentright {
+    width: 50%;
+}
+
+#opponentlooks {
+    position: relative;
+    top: 80px;
+    left: 200px;
+}
+
+#ourscreen {
+    height: 55%;
+}
+
+#top {
+    height: 45%;
+    display: flex;
+}
+
+#topleft {
+    width: 55%;
+}
+
+#looks {
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
+
+#topright {
+    width: 45%;
+}
+
+#data {
+    border: 3px solid black;
+    width: 300px;
+    height: 80px;
+    top: 80px;
+    left: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    background-color: white;
+}
+
+#nameandlevel {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: space-between;
+}
+
+#health {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hp {
+    width: 50%;
+    margin: 0;
+}
+
+#healthbar {
+    border: 1px solid black;
+    width: 149px;
+    margin: 0;
+    height: 10px;
+    left: 0px;
+}
+
+#healthbarinside {
+    background-color: rgb(64, 255, 0);
+    width: 149px;
+    margin: 0;
+    height: 10px;
+    left: 0px;
+}
+
+#bottom {
+    border: 1px solid black;
+    height: 55%;
+    display: flex;
+}
+
+.textbox {
+    border: 10px solid black;
+    width: 55%;
+    margin: 0;
+    font-size: 30px;
+    padding: 50px;
+    line-height: 50px;
+    position: relative;
+}
+
+#whatwill {
+    display: block;
+}
+
+#damagetext {
+    display: none;
+    font-size: 20px;
+}
+
+#opponentmove {
+    display: none;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#fightoptions {
+    border: 10px solid black;
+    width: 55%;
+    margin: 0;
+    font-size: 20px;
+    padding: 50px;
+    line-height: 35px;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#topfight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.moves:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#options {
+    border: 4px dashed black;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+#ok {
+    border: 4px dashed black;
+    width: 45%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+.ok {
+    font-size: 35px;
+}
+
+.ok:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.options:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#winner {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    background-color: white;
+    display: none;
+    z-index: 2;
+    border: 2px solid black;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+#loser {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    background-color: white;
+    display: none;
+    z-index: 2;
+    border: 2px solid black;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+.playagain {
+    margin-top: -60px;
+    font-size: 20px;
+}
+
+.playagain:hover {
+    text-decoration: underline;
+}

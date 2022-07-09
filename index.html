@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div id="tab">
+        <p id="theme">THEME</p>
+    </div> -->
+    <form class="choosepokemon">
+        <h1>CHOOSE YOUR POKEMON</h1>
+        <div class="pokeselection">
+            <div class="pokemon" onclick = "addOpponentForm()" id="bulbasaur" >
+                <img alt = "bulbasaur" src="https://archives.bulbagarden.net/media/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png">
+                <p>BULBASAUR</p>
+            </div>
+            <div class="pokemon" onclick = "addOpponentForm()" id="charmander">
+                <img alt = "charmander" src="https://archives.bulbagarden.net/media/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png">
+                <p>CHARMANDER</p>
+            </div>
+            <div class="pokemon" onclick = "addOpponentForm()" id="squirtle">
+                <img alr = "squirtle" src="https://archives.bulbagarden.net/media/upload/thumb/3/39/007Squirtle.png/250px-007Squirtle.png">
+                <p>SQUIRTLE</p>
+            </div>
+        </div>
+    </form>
+    <form class="choosepokemon" id="second">
+        <h1>SELECT YOUR OPPONENT</h1>
+        <div class="pokeselection">
+            <div class="pokemon" onclick="addBattleSection()" id="growlithe">
+                <img alt = "growlithe" src="https://archives.bulbagarden.net/media/upload/thumb/3/3d/058Growlithe.png/250px-058Growlithe.png">
+                <p class="smallfont">GROWLITHE</p>
+            </div>
+            <div class="pokemon" onclick="addBattleSection()" id="bellsprout">
+                <img alt = "bellsprout" src="https://archives.bulbagarden.net/media/upload/thumb/a/a2/069Bellsprout.png/600px-069Bellsprout.png">
+                <p class="smallfont">BELLSPROUT</p>
+            </div>
+            <div class="pokemon" onclick="addBattleSection()" id="poliwag">
+                <img alr = "poliwag" src="https://archives.bulbagarden.net/media/upload/thumb/4/49/060Poliwag.png/250px-060Poliwag.png">
+                <p class="smallfont">POLIWAG</p>
+            </div>
+        </div>
+    </form>
+    <section class="battlescreen" id="third">
+        <div id="opponentscreen">
+            <div id="opponentleft">
+                <div id="opponentdata">
+                    <div id="opponentnameandlevel">
+                        <p id="opponentname">BELLSPROUT</p>
+                        <p id="opponentlevel">Lv 5</p>
+                    </div>
+                    <div id="opponenthealth">
+                        <p id="opponenthp">HP</p>
+                        <div id="opponenthealthbar">
+                            <p id="opponenthealthbarinside"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="opponentright">
+                <div id="opponentlooks">
+                </div>
+            </div>
+        </div>
+        <div id="ourscreen">
+            <div id="top">
+                <div id="topleft">
+                    <div id="looks">
+                    </div>
+                </div>
+                <div id="topright">
+                    <div id="data">
+                        <div id="nameandlevel">
+                            <p id="name">CHARMANDER</p>
+                            <p id="level">Lv 5</p>
+                        </div>
+                        <div id="health">
+                            <p id="hp">HP</p>
+                            <div id="healthbar">
+                                <p id="healthbarinside"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+                <p class="textbox" id="whatwill">WHAT WILL CHARMANDER DO?</p>
+                <p class="textbox" id="damagetext"></p>
+                <p class="textbox" id="opponentmove"></p>
+                <div id="fightoptions">
+                    <div id="topfight">
+                        <p class="moves" id="moveone"></p>
+                        <p class="moves" id="movetwo"></p>
+                    </div>
+                    <div id="bottomfight">
+                        <p class="moves" id="movethree"></p>
+                    </div>
+                </div>
+                <div id="options">
+                    <p class="options" id="fight">FIGHT</p>
+                    <a href="index.html"><p class="options">RUN</p></a>
+                </div>
+                <div id="ok">
+                    <p class="ok">OK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="winner">
+        <h1>YOU WON!</h1>
+        <a href="index.html"><p class="playagain">PLAY AGAIN</p></a>
+    </section>
+    <section id="loser">
+        <h1>YOU LOST...</h1>
+        <a href="index.html"><p class="playagain">TRY AGAIN?</p></a>
+    </section>
+
+
+    <script src = "scripts.js"></script>
+</body>
+</html>
